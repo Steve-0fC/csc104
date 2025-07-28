@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Sugar Cane</h1>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <script>//JavaS.
+        /* var = variable*/
+        var city = 'Lawrence';
+
+        /*to create a variable*/
+        let state = 'Kansas';
+
+        /* zipCode = "number_here"*/
+        let zipCode;
+
+        let favoriteNum = 3;
+
+        let favoriteAnime = "Oragatang";
+
+        /* const = constant: a value that should not be influenced by change*/
+        const PI = 3.14;
+
+        /*Hard coding*/
+        alert("Hi, here in Kansas")
+
+        /*Different ways of setup*/
+        alert("I'm not in Kansas City but here in " + city + ", " + state);
+
+        /*Decision Logic(making)*/
+        //user age:
+        //let age = 29;
+        let age = 6;
+
+        //display adult if more than 18
+        if (age >= 18){
+            console.log("adult");
+        }
+        //display child if less than 18
+        else{
+            console.log("child");
+        }
+        //if the statment is false
+        if (age < 0){
+            console.log("Invalid age");
+        }
+        //check multiple conditions
+        if (age >= 18 && age < 65){
+            console.log("adult");
+        }
+        else if(age >= 65){
+            console.log("senior");
+        }
+        else if(age == 0){
+            console.log("infant");
+        }
+        else if(age > 0 && age < 4){
+            console.log("toddler")
+        }
+        else if(age > 4 && age < 18){
+            console.log("child");
+        }
+        else{
+            console.log("Invalid age");
+        }
+
+        let stringAge = '15';
+        /* == checks for equality*/
+        if (age = 15){/*valide syntax but also a logic error (age == 15)*/
+            console.log("15");
+        }
+        console.log(age);
+
+
+        /* Strict equality, info need & must match to work*/
+        if (age === 15){
+            console.log(age);
+        }
+        
+        if (age === 15){
+            console.log("strictly equals age === 15")
+        }
+        /*bad why of doing it*/
+                if (stringAge === "15"){
+            console.log("strictly equals age === '15'")
+        }
+                if (stringAge === 44){
+            console.log("strictly equals age === 44")
+        }
+        /*bad why of doing it*/
+                if (stringAge === "15"){
+            console.log("strictly equals age === '15'")
+        }
+
+
+
+        /*4Loops = if code knows hows many times to loop/while true the loop will restarts */
+        for (let i = 0; counter < 5; counter++){
+            console.log(counter)
+        }
+        /*while loop = if code dfoes not know how many times (human error base)*/
+        let i = 4;
+        while (1 < 10){
+            console.log(i);
+            /*dont forget to increase the value of i to have it not infinate*/
+            i++;
+        }
+
+
+        /*Do while loop will run atleast once*/
+        i = 4
+        do {
+            consolee.log(i);
+            i++;
+        }while (i < 10); /*Mandatory*/
+
+    </script>
+</body>
+</html>

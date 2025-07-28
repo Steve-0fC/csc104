@@ -1,0 +1,133 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5. This is necessary for the browser to render the page correctly. -->
+<html lang="en"> <!-- Specifies the language of the page as English for accessibility and search engine optimization. -->
+<head>
+  <!-- The metadata inside the <head> tag provides essential information about the page. -->
+  
+  <meta charset="UTF-8"> <!-- Defines the character encoding for the document as UTF-8 to support special characters like accented letters, symbols, etc. -->
+  
+  <!-- The viewport meta tag makes the page responsive by setting the width to the device's screen width and initial scale to 1 (default zoom). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recipes - Recipe Sharing</title> <!-- The title displayed in the browser tab when the page is opened. -->
+  
+  <!-- Link to an external stylesheet that defines the visual styles for the page. -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Main content of the body, where the actual content of the page is displayed. -->
+  
+  <!-- Navigation Bar Section -->
+  <header>
+    <!-- <nav> element defines the navigation bar for the website. -->
+    <nav>
+      <!-- This <div> holds the website's logo, typically displayed at the left side of the navbar. -->
+      <div class="logo">
+        <!-- <h1> displays the main title or name of the website, which in this case is "Recipe Share". -->
+        <h1>Recipe Share</h1>
+      </div>
+      
+      <!-- <ul> defines an unordered list for the navigation links. This will list the menu options horizontally. -->
+      <ul class="nav-links">
+        <!-- Each <li> contains a navigation link represented by <a>. -->
+        <li><a href="index.html">Home</a></li> <!-- A link to the home page of the website -->
+        
+        <!-- Link to the Recipes page where all the recipes are listed -->
+        <li><a href="recipes.html">Recipes</a></li>
+        
+        <!-- Link to the About section (this could explain the website's purpose or history) -->
+        <li><a href="#about">About</a></li>
+        
+        <!-- Link to the Contact section (could be a form or an email address for contacting the website owner) -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Recipe 1: Spaghetti Carbonara Section -->
+  <section id="carbonara">
+    <!-- <h2> provides the heading for the recipe section. It helps the user understand which recipe they are looking at. -->
+    <h2>Spaghetti Carbonara</h2>
+    
+    <!-- <img> is used to display an image of the recipe (placeholder image in this case). The 'alt' attribute provides an alternative description in case the image fails to load. -->
+    <img src="https://via.placeholder.com/800x500" alt="Spaghetti Carbonara">
+    
+    <!-- <h3> introduces a subheading for a specific part of the recipe (e.g., Ingredients) -->
+    <h3>Ingredients</h3>
+    <!-- <ul> represents an unordered list, and each <li> represents an individual item in that list. Here it lists all the ingredients for the recipe. -->
+    <ul>
+      <li>200g Spaghetti</li> <!-- A list item for the first ingredient. -->
+      <li>100g Pancetta</li> <!-- A list item for the second ingredient. -->
+      <li>2 Eggs</li> <!-- A list item for the third ingredient. -->
+      <li>50g Parmesan Cheese</li> <!-- A list item for the fourth ingredient. -->
+      <li>Black Pepper</li> <!-- A list item for the fifth ingredient. -->
+      <li>Salt</li> <!-- A list item for the sixth ingredient. -->
+    </ul>
+    
+    <!-- Instructions Section for the recipe -->
+    <h3>Instructions</h3>
+    <!-- <ol> is an ordered list (with numbered items). This helps to display the recipe steps in a sequence. -->
+    <ol>
+      <li>Cook the spaghetti according to package instructions.</li> <!-- Step 1 in the recipe -->
+      <li>Fry the pancetta until crispy.</li> <!-- Step 2 in the recipe -->
+      <li>Whisk the eggs and Parmesan together in a bowl.</li> <!-- Step 3 in the recipe -->
+      <li>Combine the cooked spaghetti with pancetta and egg mixture. Toss and season with pepper.</li> <!-- Step 4 in the recipe -->
+      <li>Serve and enjoy!</li> <!-- Final step of the recipe -->
+    </ol>
+  </section>
+
+  <!-- Recipe 2: Chicken Tacos Section -->
+  <section id="tacos">
+    <!-- Similar structure as the previous recipe section, but for a new recipe: Chicken Tacos. -->
+    <h2>Chicken Tacos</h2>
+    <img src="https://via.placeholder.com/800x500" alt="Chicken Tacos">
+    <h3>Ingredients</h3>
+    <ul>
+      <li>500g Chicken Breast</li>
+      <li>8 Small Tortillas</li>
+      <li>Fresh Salsa</li>
+      <li>Lettuce</li>
+      <li>Cheese</li>
+      <li>Avocado</li>
+    </ul>
+    <h3>Instructions</h3>
+    <ol>
+      <li>Grill the chicken and cut it into strips.</li>
+      <li>Warm the tortillas and assemble tacos with chicken, salsa, lettuce, cheese, and avocado.</li>
+      <li>Serve with a side of lime wedges!</li>
+    </ol>
+  </section>
+
+  <!-- Recipe 3: Vegetable Stir Fry Section -->
+  <section id="stirfry">
+    <!-- Another recipe section for Vegetable Stir Fry. -->
+    <h2>Vegetable Stir Fry</h2>
+    <img src="https://via.placeholder.com/800x500" alt="Vegetable Stir Fry">
+    <h3>Ingredients</h3>
+    <ul>
+      <li>1 cup Broccoli</li>
+      <li>1 Red Bell Pepper</li>
+      <li>1 Carrot</li>
+      <li>200g Tofu</li>
+      <li>2 tbsp Soy Sauce</li>
+      <li>1 tbsp Olive Oil</li>
+      <li>Sesame Seeds</li>
+    </ul>
+    <h3>Instructions</h3>
+    <ol>
+      <li>Chop vegetables and tofu into bite-sized pieces.</li>
+      <li>Stir-fry the vegetables and tofu in olive oil over medium heat.</li>
+      <li>Add soy sauce and sesame seeds, toss to coat.</li>
+      <li>Serve with rice and enjoy!</li>
+    </ol>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <!-- The footer is typically used for copyright, terms, privacy, or contact info, appearing at the bottom of the page. -->
+    <p>&copy; 2025 Recipe Share. All rights reserved.</p> <!-- Copyright notice for the website -->
+    <p><a href="index.html">Back to top</a></p> <!-- A link to return to the top of the page, helping users navigate easily. -->
+  </footer>
+
+</body>
+</html>

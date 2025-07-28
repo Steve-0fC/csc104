@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the day</title>
+    <link rel="stylesheet" href="inPut.css">
+</head>
+<body>
+
+    <header id="pillar1">
+        <h1 id="topquote">Laughter is the closest distance between two people.</h1>
+        <!-- <h1 id="author">By: Victor Borge</h1> -->
+    </header>
+
+    <main>
+        <h2 style="font-weight: lighter;">Whats you're favorite quote?</h2>
+        <p id="txtmain">Add a Quote/ or something funny</p>
+        <!-- buttons for display and reset -->
+        <div class="buttons">
+            <!-- label for the input -->
+            <label for="txtquote"></label>
+            <!-- input for the quote -->
+            <input type="text" id="txtquote" name="txtquote" placeholder="Enter a Quote"> <br>
+            <!-- buttons to add and reset quotes -->
+            <button id="addQt" type="submit" onclick="addQuote();">Add Quote</button>
+            <button id="resetQt" type="submit" onclick="resetQuoteList();">Reset Quote</button>
+        </div>
+
+        <!-- Display the list of quotes -->
+        <div id="divQuotelist"></div>
+
+    </main>
+
+    <script src="iNput.js"></script>
+</body>
+</html>

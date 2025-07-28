@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character set for the document to properly handle characters like accented letters, etc. -->
+  <meta charset="UTF-8">
+  
+  <!-- Viewport settings to ensure the page scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- The title that will appear on the browser tab when the user views this page -->
+  <title>Recipe Sharing</title>
+  
+  <!-- Link to an external stylesheet (styles.css) to style the page (CSS is in another file) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar Section -->
+  <header>
+    <!-- Main navigation container to hold the links for easy site navigation -->
+    <nav>
+      <!-- A div that contains the logo of the website -->
+      <div class="logo">
+        <!-- The main heading of the website, displayed in large text for branding -->
+        <h1>Recipe Share</h1>
+      </div>
+      
+      <!-- An unordered list for the navigation links (links to different sections/pages of the site) -->
+      <ul class="nav-links">
+        <!-- Link to the home page -->
+        <li><a href="index.html">Home</a></li>
+        
+        <!-- Link to the Recipes page where users can browse all recipes -->
+        <li><a href="recipes.html">Recipes</a></li>
+        
+        <!-- Link to the About section (might describe the website or its purpose) -->
+        <li><a href="#about">About</a></li>
+        
+        <!-- Link to the Contact section (might have a contact form or email) -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- This section is typically used to create a strong first impression (welcoming message) -->
+  <section class="hero" id="home">
+    <!-- Container for the content inside the hero section -->
+    <div class="hero-content">
+      <!-- Main title of the hero section (larger text to grab attention) -->
+      <h2>Welcome to Recipe Share!</h2>
+      
+      <!-- A paragraph below the title to provide more information (a subtitle or tagline) -->
+      <p>Discover and share delicious recipes with the world.</p>
+    </div>
+  </section>
+
+  <!-- Featured Recipes Section -->
+  <!-- Section where you will display featured recipes that are highlighted for visitors -->
+  <section id="recipes">
+    <!-- Heading for this section (what the user is about to see) -->
+    <h2>Featured Recipes</h2>
+    
+    <!-- Container that holds all the recipe cards -->
+    <div class="recipe-cards">
+    
+      <!-- Recipe Card 1: Spaghetti Carbonara -->
+      <div class="recipe-card">
+        <!-- Image associated with the recipe (in this case, a placeholder image) -->
+        <img src="https://via.placeholder.com/300x200" alt="Recipe 1">
+        
+        <!-- Title of the recipe (it gives users an idea of what the recipe is) -->
+        <h3>Spaghetti Carbonara</h3>
+        
+        <!-- Short description of the recipe, letting users know what to expect -->
+        <p>A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
+        
+        <!-- A link that takes the user to the detailed recipe on the Recipes page. The link will scroll down to the specific recipe section -->
+        <a href="recipes.html#carbonara">View Recipe</a>
+      </div>
+
+      <!-- Recipe Card 2: Chicken Tacos -->
+      <div class="recipe-card">
+        <!-- Image for Chicken Tacos (another placeholder image) -->
+        <img src="https://via.placeholder.com/300x200" alt="Recipe 2">
+        
+        <!-- Title of the second recipe -->
+        <h3>Chicken Tacos</h3>
+        
+        <!-- A description of the tacos recipe -->
+        <p>Quick and easy chicken tacos with fresh toppings and homemade salsa.</p>
+        
+        <!-- Link to the detailed recipe on the Recipes page -->
+        <a href="recipes.html#tacos">View Recipe</a>
+      </div>
+
+      <!-- Recipe Card 3: Vegetable Stir Fry -->
+      <div class="recipe-card">
+        <!-- Image for Vegetable Stir Fry (placeholder image) -->
+        <img src="https://via.placeholder.com/300x200" alt="Recipe 3">
+        
+        <!-- Title of the stir fry recipe -->
+        <h3>Vegetable Stir Fry</h3>
+        
+        <!-- Short description of this healthy recipe -->
+        <p>A healthy stir fry with seasonal vegetables, tofu, and soy sauce.</p>
+        
+        <!-- Link to the detailed recipe for Vegetable Stir Fry -->
+        <a href="recipes.html#stirfry">View Recipe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <!-- Footer is typically used for small print or additional site information (contact details, copyright, etc.) -->
+  <footer id="contact">
+    <!-- Text showing copyright information (current year and website name) -->
+    <p>&copy; 2025 Recipe Share. All rights reserved.</p>
+    
+    <!-- Link to take the user back to the top of the page (helpful for longer pages) -->
+    <p><a href="#home">Back to top</a></p>
+  </footer>
+</body>
+</html>

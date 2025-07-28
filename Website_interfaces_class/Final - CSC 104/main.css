@@ -1,0 +1,185 @@
+h1{
+    text-align: center;
+    font-style: italic;
+}
+body{
+    background-color: rgb(205, 176, 211);
+}
+*{
+    text-decoration: none;
+}
+.navbar{
+    background: lightpink; 
+    padding: 15px; 
+    padding-right: 15px;
+    margin: 0px;
+    border: 1px solid;
+}
+.navdiv{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.logo a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40; 
+    font-weight: 600; color: rgb(19, 70, 68);
+    border: solid;
+    padding: 10px 20px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+li a{
+    color: rgb(48, 70, 68); 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-right: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.4s ease-in-out;
+}
+li{
+    list-style: none; 
+    display:inline-block;
+}
+/*Hover effect over menu bar*/
+li a:hover{
+    color: rgb(131, 91, 136)        }
+button{
+    background-color: rgb(19, 70, 67);
+    margin-left: 10px; 
+    border-radius: 10px; 
+    padding: 10px; 
+    width: 90px;
+    transition: 0.4s ease;
+}
+button a{
+    color: white; 
+    font-weight: bold; 
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(131, 91, 136);
+}
+article{
+    border: 2px solid violet;
+    border-radius: 400px;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    /*10px top&bottom, 20px left&right*/ 
+    padding: 20px 10px;
+    /*flex-grow: 0 - element willgrow beyond
+    flex-shrink: 0 - element will not shrink when less space
+    flex-basis: 20% - the intial size will be 20% of the parent container*/
+    flex: 0 0 20%;
+    background-color: rgb(131, 91, 136);
+}
+img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid violet;
+    border-radius: 200px;
+}
+.search{
+    width: 330px;
+    margin-left: 300px;
+    float: none;
+}
+.srch{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(19, 70, 67);
+    margin-top:  12px;
+    color: rgb(19, 70, 67);
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    float: left;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(19, 70, 67);
+    border: 2px solid rgb(19, 70, 67);
+    border-radius: 15px;
+    margin-top: 12px;
+    color: white;
+    font-size: 16px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.blkTxt{
+    border: 1px solid violet;
+    margin: 12px;
+    padding: 2px 12px -10px 5px;
+    background-color: rgb(131, 91, 136);
+    font-family:Georgia, 'Times New Roman';
+}
+form{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid violet;
+    box-shadow: 0 0 10px pink;
+}
+input[type="submit"]{
+    margin-bottom: 10px;
+    width: 25%;
+    padding: 10px;
+    border: 0;
+    background-color: rgb(19, 70, 67);
+    color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    transition: 0.4s ease-in-out;
+}
+input:hover{
+    background-color: rgb(154, 86, 163);
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+footer{
+    background-color: brown;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+/*media query*/
+/*@media screen and (max-width: 768px){
+    main{
+        /*switch so they stack
+        flex-direction: column;
+    }
+}
+anchor footer to bottom of screen
+@media screen and (min-width: 769px){
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+}*/

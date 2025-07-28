@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taBLE</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 75%;
+        }
+        td,th{
+            text-align: left;
+            padding: 2px;
+        }
+        th{
+            background-color: aqua;
+            color: brown;
+        }
+        tr:nth-child(odd){
+            background-color: bisque;
+        }
+        tr:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Table Sec</h1>
+    </header>
+
+    <main>
+        <table>
+            <caption>Some random things about random things</caption>
+            <!--table row = 'tr' -->
+            <thead>
+                <tr>
+                    <!--table headings = 'th'-->
+                    <th scope="col">Numb#r</th>
+                    <th scope="col">Summs</th>
+                    <th scope="col">Hummis</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>23</td>
+                    <td>234</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>34</td>
+                    <td>345</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>45</td>
+                    <td>456</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

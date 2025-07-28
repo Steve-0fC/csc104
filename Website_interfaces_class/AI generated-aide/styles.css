@@ -1,0 +1,316 @@
+/* Resetting default styles */
+* {
+    /* Removes default margin and padding for all elements to ensure consistency across browsers */
+    margin: 0;
+    padding: 0;
+    
+    /* Ensures that the box-sizing for all elements includes padding and border in the total width and height */
+    box-sizing: border-box;
+  }
+  
+  /* General body and layout settings */
+  body {
+    /* Sets the font family to Arial, or sans-serif if Arial is not available */
+    font-family: Arial, sans-serif;
+    
+    /* Sets the line height for better readability of text */
+    line-height: 1.6;
+    
+    /* Default text color is set to a dark shade of gray */
+    color: #333;
+    
+    /* Sets a light gray background color for the page */
+    background-color: #f4f4f4;
+  }
+  
+  /* Navigation Bar */
+  header {
+    /* Sets a dark background color for the navigation bar */
+    background-color: #333;
+    
+    /* Sets the text color inside the navigation bar to white */
+    color: white;
+    
+    /* Adds padding around the navigation bar */
+    padding: 1rem 2rem;
+  }
+  
+  /* Defines the layout of the navigation bar */
+  nav {
+    /* Uses Flexbox to create a flexible layout for the nav */
+    display: flex;
+    
+    /* Space between the elements in the nav bar is distributed evenly */
+    justify-content: space-between;
+    
+    /* Aligns the items vertically in the center */
+    align-items: center;
+  }
+  
+  /* Styles the logo section inside the navigation */
+  nav .logo h1 {
+    /* Sets the font size for the logo text */
+    font-size: 1.5rem;
+  }
+  
+  /* Styles the list of navigation links */
+  nav .nav-links {
+    /* Removes default bullet points from the list */
+    list-style: none;
+    
+    /* Displays the navigation links in a horizontal row */
+    display: flex;
+  }
+  
+  /* Defines the margin between each list item in the navigation */
+  nav .nav-links li {
+    /* Adds a space of 2rem to the left of each list item */
+    margin-left: 2rem;
+  }
+  
+  /* Styles the links inside the navigation */
+  nav .nav-links a {
+    /* Sets the text color to white for the navigation links */
+    color: white;
+    
+    /* Removes the default underline style of links */
+    text-decoration: none;
+    
+    /* Sets the font size of the links */
+    font-size: 1rem;
+  }
+  
+  /* Defines the hover effect for the navigation links */
+  nav .nav-links a:hover {
+    /* Underlines the link when it is hovered over */
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    /* Sets the background image for the hero section */
+    background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+    
+    /* Makes the text inside the hero section white for better contrast */
+    color: white;
+    
+    /* Adds padding to the hero section for spacing */
+    padding: 4rem 2rem;
+    
+    /* Centers the text in the hero section */
+    text-align: center;
+  }
+  
+  /* Styles for the heading inside the hero section */
+  .hero h2 {
+    /* Sets the font size of the main heading */
+    font-size: 3rem;
+    
+    /* Adds space below the heading */
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the paragraph inside the hero section */
+  .hero p {
+    /* Sets the font size of the paragraph */
+    font-size: 1.25rem;
+  }
+  
+  /* Featured Recipes Section */
+  #recipes {
+    /* Adds padding to the recipes section */
+    padding: 3rem 2rem;
+    
+    /* Centers the text in the recipes section */
+    text-align: center;
+  }
+  
+  /* Styles the heading of the recipes section */
+  #recipes h2 {
+    /* Sets the font size of the recipes section heading */
+    font-size: 2.5rem;
+    
+    /* Adds space below the heading */
+    margin-bottom: 2rem;
+  }
+  
+  /* Container for the recipe cards */
+  .recipe-cards {
+    /* Uses Flexbox to display the recipe cards in a row */
+    display: flex;
+    
+    /* Adds space between the recipe cards */
+    justify-content: center;
+    
+    /* Adds a gap of 2rem between each card */
+    gap: 2rem;
+  }
+  
+  /* Styles for individual recipe cards */
+  .recipe-card {
+    /* Sets the background color to white for each card */
+    background-color: white;
+    
+    /* Rounds the corners of the recipe cards */
+    border-radius: 8px;
+    
+    /* Adds a subtle box-shadow to the recipe cards for a floating effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Sets the width of each card */
+    width: 300px;
+    
+    /* Ensures content doesn't overflow outside the card */
+    overflow: hidden;
+    
+    /* Centers the content inside the card */
+    text-align: center;
+  }
+  
+  /* Styles the images inside the recipe cards */
+  .recipe-card img {
+    /* Makes the image take up the full width of the card */
+    width: 100%;
+    
+    /* Sets the height of the image to 200px */
+    height: 200px;
+    
+    /* Ensures the image is cropped to fit the container */
+    object-fit: cover;
+  }
+  
+  /* Styles the title inside each recipe card */
+  .recipe-card h3 {
+    /* Sets the font size for the recipe title */
+    font-size: 1.5rem;
+    
+    /* Adds space above and below the title */
+    margin: 1rem 0;
+  }
+  
+  /* Styles the paragraph inside each recipe card */
+  .recipe-card p {
+    /* Sets the font size for the description of the recipe */
+    font-size: 1rem;
+    
+    /* Adds padding to the left and right of the paragraph */
+    padding: 0 1rem;
+    
+    /* Adds space below the description */
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles the "View Recipe" link in each card */
+  .recipe-card a {
+    /* Sets the background color for the link */
+    background-color: #333;
+    
+    /* Sets the text color to white for the link */
+    color: white;
+    
+    /* Adds padding around the link text */
+    padding: 0.5rem 1rem;
+    
+    /* Removes the default text decoration for the link */
+    text-decoration: none;
+    
+    /* Rounds the corners of the link's background */
+    border-radius: 5px;
+  }
+  
+  /* Defines the hover effect for the recipe link */
+  .recipe-card a:hover {
+    /* Changes the background color when the link is hovered over */
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    /* Sets the background color of the footer to dark gray */
+    background-color: #333;
+    
+    /* Sets the text color inside the footer to white */
+    color: white;
+    
+    /* Adds padding around the footer */
+    padding: 1rem 2rem;
+    
+    /* Centers the text inside the footer */
+    text-align: center;
+  }
+  
+  /* Styles the paragraphs inside the footer */
+  footer p {
+    /* Adds a small margin above and below each paragraph */
+    margin: 0.5rem 0;
+  }
+  
+  /* Styles the links inside the footer */
+  footer a {
+    /* Sets the link color to white */
+    color: white;
+    
+    /* Removes the underline from the link */
+    text-decoration: none;
+  }
+  
+  /* Defines the hover effect for footer links */
+  footer a:hover {
+    /* Underlines the footer link when hovered over */
+    text-decoration: underline;
+  }
+  
+  /* Recipe Page Styles */
+  #carbonara, #tacos, #stirfry {
+    /* Adds padding around each recipe section */
+    padding: 3rem 2rem;
+    
+    /* Adds space below each recipe section */
+    margin-bottom: 3rem;
+  }
+  
+  /* Styles for the headings of each recipe section */
+  #carbonara h2, #tacos h2, #stirfry h2 {
+    /* Sets the font size of each recipe section heading */
+    font-size: 2.5rem;
+    
+    /* Adds space below the heading */
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the images inside each recipe page */
+  #carbonara img, #tacos img, #stirfry img {
+    /* Makes the images take up the full width of the section */
+    width: 100%;
+    
+    /* Ensures the height adjusts automatically to preserve the aspect ratio */
+    height: auto;
+    
+    /* Adds space above and below the images */
+    margin: 1rem 0;
+  }
+  
+  /* Styles for subheadings (ingredients, instructions) */
+  h3 {
+    /* Sets the font size for subheadings */
+    font-size: 1.5rem;
+    
+    /* Adds space above each subheading */
+    margin-top: 1rem;
+  }
+  
+  /* Styles the unordered and ordered lists in the recipe page */
+  ul, ol {
+    /* Adds left margin to the list for indentation */
+    margin-left: 2rem;
+  }
+  
+  /* Styles the list items inside both unordered and ordered lists */
+  ul li, ol li {
+    /* Sets the font size for the list items */
+    font-size: 1.2rem;
+    
+    /* Adds space below each list item */
+    margin-bottom: 0.5rem;
+  }
+  

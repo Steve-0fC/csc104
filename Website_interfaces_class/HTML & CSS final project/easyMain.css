@@ -1,0 +1,99 @@
+article img{
+    width: 150px;
+    height: 150px;
+}
+ul li{
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid brown;
+
+}
+body{ /*default, reset*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgrey;
+}
+.outerEdge{
+    margin: 12px;
+    border: 1px solid darkblue;
+    padding: 40px;
+}
+.h1{
+    margin: 20%;
+}
+.box{
+    width: 175px;
+    height: 175px;
+    background-color: aquamarine;
+    /*top,right,bottom,left*/
+    padding: 30px 12px 10px 20px;
+    border: 10px inset pink;
+    margin: 20px;
+}
+header{
+    background-color: violet;
+    color: gold;
+    padding: 15px;
+    text-align: right;
+}
+main{
+    /*set up responsive flex layout*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+article{
+    /*flex-grow: 0 - element willgrow beyond
+    flex-shrink: 0 - element will not shrink when less space
+    flex-basis: 20% - the intial size will be 20% of the parent container*/
+    flex: 0 0 20%;
+    background-color: pink;
+    border-radius: 12px;
+    border: 1px solid blue;
+    /*10px top&bottom, 20px left&right*/
+    padding: 12px 20px;
+}
+footer{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 95;
+}
+/*media query*/
+@media screen and (max-width: 768px){
+    main{
+        /*switch so they stack*/
+        flex-direction: column;
+    }
+}
+article{
+    width: 90%;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+/*anchor footer to bottom of screen*/
+@media screen and (min-width: 769px){
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(11, 11, 32, 0.356);
+}
+nav ul li a:hover{
+    color: rgb(109, 59, 108);
+    background-color: pink;
+}
