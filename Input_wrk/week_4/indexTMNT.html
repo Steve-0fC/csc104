@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMNT Short Quiz</title>
+    <link rel="stylesheet" href="PF_page.css">
+</head>
+<body>
+    <header>
+        <h1>TMNT Short Quiz</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Do you know your Teenage Mutant Ninja Turtle knowledge?</h2>
+
+            <form name="frmTMNT" id="frmTMNT" method="post" action="#"
+            onsubmit="return processPFtInfo();">
+                <!-- first input field -->
+                <label for="txtCharter">Please name your favorite TMNT Character?</label>
+                <input type="text" id="txtCharter" name="txtCharter" placeholder="Character Name">
+                <!-- second input field -->
+                <label for="txtWepn">What weapon do they use?</label>
+                <input type="text" id="txtWepn" name="txtWepn" placeholder="Weapon">
+                <!-- third input field -->
+                <label for="txtTcolor">What is their main color?</label>
+                <input type="text" id="txtTcolor" name="txtTcolor" placeholder="Color">
+                <!-- fourth input field -->
+                <label for="txtGaurd">Who is their guardian?</label>
+                <input type="text" id="txtGaurd" name="txtGaurd" placeholder="Guardian Name">
+                <!-- submit button -->
+                <input type="submit" value="Submit Me">
+            </form>
+
+            <div id="divOutput">
+                <h2>Teenage Mutant Ninja Turtles prompt</h2>
+                <div id="divEachOne"></div>
+            </div>
+
+        </section>
+        <script src="PF_page.js"></script>
+    </main>
+    
+</body>
+</html>
